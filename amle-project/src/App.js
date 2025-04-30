@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from "react";
+import Cards from "./Cards.js";
 
 function Square ({value, onSquareClick}) {
   
@@ -10,7 +11,7 @@ function Square ({value, onSquareClick}) {
   );
 }
 
-function Board() {
+export default function Board() {
   const [boardVar, setValue] = useState(Array(9).fill(null));
   const [xIsNext, setValueXO] = useState(true);
   
@@ -79,11 +80,12 @@ function Board() {
     <Square value={boardVar[7]} onSquareClick={()=>handleClick(7)}/> 
     <Square value={boardVar[8]} onSquareClick={()=>handleClick(8)}/>
   </div>
+  <Cards />
   </>
   );
 }
 
-export default function Game() {
+/*export default function Game() {
   const [gameIterations, setGameIteration] = useState([Array(9).fill(null)]);
   const [xIsNext, setXIsNext] = useState(true);
 
@@ -98,8 +100,8 @@ export default function Game() {
         <Board />
       </div>
       <div className="game-info">
-        <ol>{/*TODO*/}</ol>
-      </div>
-    </div>
-  );
-}
+        <ol>{/*TODO*///}</ol>
+      //</div>
+    //</div>
+  //);
+//}
