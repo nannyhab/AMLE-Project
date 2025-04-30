@@ -11,3 +11,8 @@ In order to start react-app:
 1.npm install
 2.npm run build
 3.npm start
+
+Dependencies: 
+1. install node package manager -> https://nodejs.org/en/download
+2. install react-bootstrap -> https://react-bootstrap.netlify.app/docs/getting-started/introduction
+   
