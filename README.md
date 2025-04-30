@@ -15,4 +15,5 @@ In order to start react-app:
 Dependencies: 
 1. install node package manager -> https://nodejs.org/en/download
 2. install react-bootstrap -> https://react-bootstrap.netlify.app/docs/getting-started/introduction
+3. install git https://git-scm.com/downloads/mac
    
