@@ -1,5 +1,6 @@
 const orig_recipes =[ {
-    title: ' My Mashed potatoes',
+    imageUrl: "./lawFirmImages/American_Bar_Association.svg.png",
+    title: 'The American Bar Association',
     feedback: {
         rating: 3.8,
         reviews: 20
@@ -23,7 +24,8 @@ const orig_recipes =[ {
     ]
 },
 {
-    title: ' Cheesey Mashed potatoes',
+    imageUrl: "./lawFirmImages/ILSAA.jpg",
+    title: 'Immigration Legal Services for Afghan Arrivals',
     feedback: {
         rating: 4.8,
         reviews: 20
@@ -48,7 +50,8 @@ const orig_recipes =[ {
     ]
 },
 {
-    title: ' Lumpy Mashed potatoes',
+    imageUrl: "./lawFirmImages/ACLU.png",
+    title: 'The American Civil Liberties Union',
     feedback: {
         rating: 2.8,
         reviews: 20
@@ -71,7 +74,8 @@ const orig_recipes =[ {
     ]
 },
 {
-    title: ' Creamy Mashed potatoes',
+    imageUrl: "./lawFirmImages/cairchicago.png",
+    title: 'CAIR Chicago',
     feedback: {
         rating: 3.5,
         reviews: 20

@@ -43,32 +43,7 @@ function CardDisplay(){
     }*/
 
     // useEffect hook to perform side effects in the component
-    useEffect(() => {
-        console.log(recipes);
     
-        let allPrepared = false;
-    
-        for (let i = 0; i < recipes.length; i++) {
-            let prepared = true;
-    
-            if (recipes[i].ingredients) {
-                for (let j = 0; j < recipes[i].ingredients.length; j++) {
-                    if (!recipes[i].ingredients[j].prepared) {
-                        prepared = false;
-                        break;
-                    }
-                }
-            }
-    
-            if (prepared) {
-                allPrepared = true;
-                break;
-            }
-        }
-    
-        setPrepared(allPrepared); // Update the prepared state
-    }, [trigger]); // Only depend on `trigger`
-
     
 
     const cards = orig_recipes.map((recipe, index) => { 
@@ -92,7 +67,7 @@ function CardDisplay(){
                     </Modal.Header>
                     <Modal.Body>
                         
-                        { prepared ? <Alert variant='success'><Alert.Heading>Prep work done!</Alert.Heading></Alert> : <Alert variant='danger'><Alert.Heading>Just keep chopping</Alert.Heading></Alert>}
+                        { prepared ? <Alert variant='success'><Alert.Heading>Prep work done!</Alert.Heading></Alert> : <Alert variant='danger'><Alert.Heading>More Data Needed</Alert.Heading></Alert>}
                     </Modal.Body>
                 </Modal>
             </Col>
@@ -100,7 +75,12 @@ function CardDisplay(){
     });
     return(
         <Container>
-            <h1>{orig_recipes}</h1>
+            <h1>Law Firm Resources</h1>
+            <ul>
+                {orig_recipes.map((recipe, index) => (
+                <li key={index}>{recipe.title}</li>
+                ))}
+            </ul>
             <Row>
                 {cards}
             </Row>
