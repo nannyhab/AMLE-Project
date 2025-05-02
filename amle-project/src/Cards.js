@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Alert from 'react-bootstrap/Alert';
+import './Cards.css';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 
@@ -49,8 +50,15 @@ function CardDisplay(){
     const cards = orig_recipes.map((recipe, index) => { 
         return (
             <Col key={index}>
-                <Card style={{ width: '20rem' }}>
-                    <Card.Img variant="top" src={recipe.imageUrl} />
+                <Card className="card" style={{ width: '18rem' }}>
+                <a
+    href={`${recipe.websiteUrl}`} // Corrected template literal
+                    target="_blank"
+                    rel="noopener noreferrer"
+                     >
+                <Card.Img variant="top" src={recipe.imageUrl} alt={recipe.title} />
+                </a>
+                    
                     <Card.Body>
                         <Card.Title>
                         </Card.Title>

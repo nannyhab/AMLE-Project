@@ -1,5 +1,6 @@
 const orig_recipes =[ {
     imageUrl: "./lawFirmImages/American_Bar_Association.svg.png",
+    websiteUrl: "https://www.americanbar.org/",
     title: 'The American Bar Association',
     feedback: {
         rating: 3.8,
@@ -25,6 +26,7 @@ const orig_recipes =[ {
 },
 {
     imageUrl: "./lawFirmImages/ILSAA.jpg",
+    websiteUrl: "https://ilsaa.acf.hhs.gov/",
     title: 'Immigration Legal Services for Afghan Arrivals',
     feedback: {
         rating: 4.8,
@@ -51,6 +53,7 @@ const orig_recipes =[ {
 },
 {
     imageUrl: "./lawFirmImages/ACLU.png",
+    websiteUrl: "https://www.aclu.org/",
     title: 'The American Civil Liberties Union',
     feedback: {
         rating: 2.8,
@@ -75,6 +78,7 @@ const orig_recipes =[ {
 },
 {
     imageUrl: "./lawFirmImages/cairchicago.png",
+    websiteUrl: 'https://www.cairchicago.org/',
     title: 'CAIR Chicago',
     feedback: {
         rating: 3.5,
