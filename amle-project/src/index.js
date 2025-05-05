@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Card from './Cards.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './NavBar.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <NavBar />
     <App />
+    <Card />
   </React.StrictMode>
 );
 

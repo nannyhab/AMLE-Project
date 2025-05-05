@@ -80,7 +80,7 @@ export default function Board() {
     <Square value={boardVar[7]} onSquareClick={()=>handleClick(7)}/> 
     <Square value={boardVar[8]} onSquareClick={()=>handleClick(8)}/>
   </div>
-  <Cards />
+  
   </>
   );
 }
